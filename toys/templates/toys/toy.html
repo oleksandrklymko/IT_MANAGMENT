@@ -1,0 +1,12 @@
+{% extends 'toys/base.html' %}
+
+{% block content %}
+<div class="card mb-3">
+  <img src="{{ toy.picture.url }}" class="card-img-top" style="width: 100%; height: 400px;" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ toy}}</h5>
+    <p class="card-text">{{ toy.description }}</p>
+    <p class="card-text"><small class="text-muted btn disabled btn-outline-dark">{{ toy.price }} UAH</small></p>
+  </div>
+</div>
+{% endblock %}
